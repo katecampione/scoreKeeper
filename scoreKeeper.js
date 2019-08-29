@@ -31,6 +31,10 @@ p2Button.addEventListener("click", function(){
 });
 
 resetButton.addEventListener("click", function(){
-    p1Display.textContent = p1Score;
-    p2Display.textContent = p2Score;
+  p1Score = 0;
+  p2Score = 0;
+  p1Display.textContent = p1Score;
+  p2Display.textContent = p2Score;
+  p1Display.classList.remove("winner");
+  p2Display.classList.remove("winner");
 });
